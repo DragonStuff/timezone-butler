@@ -65,6 +65,8 @@ const handleSlackMessage = async (
     thread_ts: string
   }
 ) => {
+  console.log(event)
+  
   if (event.type === 'app_uninstalled' || event.type === 'app_home_opened') {
     return
   }
